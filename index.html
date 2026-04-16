@@ -1165,28 +1165,31 @@
 const TOTAL_PUNTOS = 2;
 const preguntas = [
   {
+    // P1 — correcta: 0 (a)
     texto: "¿Qué es la identidad corporativa?",
     opciones: [
-      "El nombre legal registrado de una empresa ante el Estado.",
       "El conjunto de elementos visuales y comunicacionales que representan de forma única a una empresa.",
+      "El nombre legal registrado de una empresa ante el Estado.",
       "El número de empleados y oficinas que tiene una organización."
     ],
-    correcta: 1,
+    correcta: 0,
     feedback_ok: "¡Correcto! La identidad corporativa es precisamente ese conjunto de elementos visuales (colores, tipografías, logotipo, etc.) que dan personalidad y reconocimiento a una empresa.",
     feedback_mal: "No es correcto. La identidad corporativa no se refiere al nombre legal ni al tamaño de la empresa. Es el sistema de elementos visuales y comunicacionales que la hacen reconocible y única."
   },
   {
+    // P2 — correcta: 2 (c)
     texto: "¿Cuál es la función principal del Manual de Identidad Corporativa?",
     opciones: [
       "Registrar el historial financiero y los activos de la empresa.",
-      "Establecer las normas oficiales de uso de todos los elementos visuales de la empresa.",
-      "Describir los productos y servicios que ofrece la empresa al mercado."
+      "Describir los productos y servicios que ofrece la empresa al mercado.",
+      "Establecer las normas oficiales de uso de todos los elementos visuales de la empresa."
     ],
-    correcta: 1,
+    correcta: 2,
     feedback_ok: "¡Muy bien! El Manual de Identidad Corporativa es el documento que dicta cómo deben usarse correctamente los colores, tipografías, logotipo y demás elementos visuales en todos los materiales de la empresa.",
     feedback_mal: "Incorrecto. El Manual de Identidad Corporativa no registra finanzas ni describe productos. Su propósito es establecer las reglas de uso de los elementos visuales para mantener coherencia en todas las comunicaciones de la empresa."
   },
   {
+    // P3 — correcta: 1 (b)
     texto: "Los colores primarios en una paleta corporativa son aquellos que:",
     opciones: [
       "Se usan solo en fondos secundarios y elementos de apoyo.",
@@ -1198,17 +1201,19 @@ const preguntas = [
     feedback_mal: "Incorrecto. Los colores primarios son los colores dominantes y más representativos de la marca, no los de apoyo ni están limitados solo a impresos."
   },
   {
+    // P4 — correcta: 0 (a)
     texto: "¿Para qué sirven los colores secundarios en una identidad corporativa?",
     opciones: [
-      "Reemplazar completamente a los colores primarios cuando no están disponibles.",
       "Complementar a los colores primarios aportando variedad sin perder la coherencia visual.",
+      "Reemplazar completamente a los colores primarios cuando no están disponibles.",
       "Usarse exclusivamente en el logotipo de la empresa."
     ],
-    correcta: 1,
+    correcta: 0,
     feedback_ok: "¡Excelente! Los colores secundarios tienen un papel de apoyo: complementan a los primarios y permiten variedad en los materiales sin romper la coherencia visual de la marca.",
     feedback_mal: "Incorrecto. Los colores secundarios no reemplazan a los primarios ni se usan solo en el logotipo. Su función es complementar la paleta y aportar variedad visual manteniendo la coherencia de la marca."
   },
   {
+    // P5 — correcta: 2 (c)
     texto: "¿En qué modelo de color se especifican los colores corporativos para documentos impresos?",
     opciones: [
       "HEX (hexadecimal), que es el estándar para todo tipo de impresión.",
@@ -1220,6 +1225,7 @@ const preguntas = [
     feedback_mal: "Incorrecto. Para impresión se utiliza el modelo CMYK. HEX y RGB son modelos diseñados para pantallas (monitores, teléfonos, televisores)."
   },
   {
+    // P6 — correcta: 0 (a)
     texto: "¿Cuál es la diferencia principal entre la tipografía para títulos y la tipografía para cuerpo de texto?",
     opciones: [
       "La tipografía de títulos es más decorativa y expresiva; la de cuerpo es más legible y neutral para textos extensos.",
@@ -1231,50 +1237,55 @@ const preguntas = [
     feedback_mal: "Incorrecto. La diferencia no es de color ni de soporte. La tipografía de títulos es más decorativa y expresiva, mientras que la de cuerpo es más legible y sencilla para facilitar la lectura de textos extensos."
   },
   {
+    // P7 — correcta: 2 (c)
     texto: "¿Cuántas tipografías se recomienda usar como máximo en una identidad corporativa?",
     opciones: [
       "Cuatro tipografías diferentes para dar mayor variedad y creatividad.",
-      "Dos tipografías: una para títulos y una para cuerpo de texto.",
-      "Una sola tipografía para todo tipo de texto."
+      "Una sola tipografía para todo tipo de texto.",
+      "Dos tipografías: una para títulos y una para cuerpo de texto."
     ],
-    correcta: 1,
+    correcta: 2,
     feedback_ok: "¡Correcto! Lo ideal es usar dos fuentes: una para títulos y una para cuerpo. Usar más genera desorden visual y hace que los materiales pierdan coherencia.",
     feedback_mal: "Incorrecto. La práctica recomendada en diseño corporativo es usar máximo dos tipografías: una para títulos y otra para cuerpo. Usar más puede generar desorden visual y afectar la coherencia de la marca."
   },
   {
+    // P8 — correcta: 1 (b)
     texto: "¿Qué es la zona de exclusión o área de protección del logotipo?",
     opciones: [
-      "El espacio mínimo libre de otros elementos visuales que debe existir alrededor del logotipo.",
       "El tamaño máximo al que puede ampliarse el logotipo en una impresión.",
+      "El espacio mínimo libre de otros elementos visuales que debe existir alrededor del logotipo.",
       "El listado de fondos de color prohibidos para usar con el logotipo."
     ],
-    correcta: 0,
+    correcta: 1,
     feedback_ok: "¡Correcto! La zona de exclusión es ese espacio de 'respiro' alrededor del logotipo que lo protege de otros elementos y garantiza su legibilidad e impacto visual.",
     feedback_mal: "Incorrecto. La zona de exclusión no tiene que ver con tamaños máximos ni con listas de colores. Es el espacio libre mínimo que debe existir alrededor del logotipo para proteger su legibilidad."
   },
   {
+    // P9 — correcta: 0 (a)
     texto: "¿Cuál de las siguientes acciones representa un USO INCORRECTO del logotipo?",
     opciones: [
-      "Usar la versión oficial en blanco sobre un fondo oscuro.",
       "Deformar o estirar el logotipo cambiando sus proporciones originales.",
+      "Usar la versión oficial en blanco sobre un fondo oscuro.",
       "Mantener el área de protección al colocarlo en un folleto."
     ],
-    correcta: 1,
+    correcta: 0,
     feedback_ok: "¡Exacto! Deformar el logotipo es uno de los errores más graves. Las proporciones originales deben respetarse siempre; al redimensionar, siempre se hace de forma proporcional.",
-    feedback_mal: "Incorrecto. Las opciones A y C son usos correctos. El uso incorrecto es deformar o estirar el logotipo, ya que altera su diseño original y daña la imagen de la marca."
+    feedback_mal: "Incorrecto. Las opciones B y C son usos correctos. El uso incorrecto es deformar o estirar el logotipo, ya que altera su diseño original y daña la imagen de la marca."
   },
   {
+    // P10 — correcta: 2 (c)
     texto: "¿Qué sucede si se coloca el logotipo sobre un fondo con muy poco contraste?",
     opciones: [
       "Nada, el logotipo siempre se ve bien sin importar el fondo.",
-      "El logotipo pierde legibilidad y visibilidad, afectando la percepción de la marca.",
-      "Se convierte automáticamente en la versión secundaria del logotipo."
+      "Se convierte automáticamente en la versión secundaria del logotipo.",
+      "El logotipo pierde legibilidad y visibilidad, afectando la percepción de la marca."
     ],
-    correcta: 1,
+    correcta: 2,
     feedback_ok: "¡Correcto! La falta de contraste hace que el logotipo sea difícil de leer o ver, lo que perjudica la comunicación de la marca. Por eso el Manual especifica sobre qué fondos puede usarse.",
     feedback_mal: "Incorrecto. Un fondo con poco contraste dificulta la lectura del logotipo y reduce su impacto. Por eso el Manual de Identidad especifica claramente sobre qué fondos está permitido colocar el logotipo."
   },
   {
+    // P11 — correcta: 1 (b)
     texto: "En un informe corporativo estándar, ¿cuál es el margen izquierdo más común?",
     opciones: [
       "1.0 cm, para aprovechar al máximo el espacio de la hoja.",
@@ -1286,28 +1297,31 @@ const preguntas = [
     feedback_mal: "Incorrecto. En documentos corporativos como informes y cartas, el margen izquierdo estándar es de 3.0 cm. Esto se debe a que es el lado donde se encuaderna o perfora el documento."
   },
   {
+    // P12 — correcta: 0 (a)
     texto: "¿Cuál es el interlineado recomendado para cuerpo de texto en documentos corporativos?",
     opciones: [
-      "0.5 (muy comprimido) para aprovechar el espacio de la hoja.",
       "Entre 1.15 y 1.5 para garantizar una lectura cómoda.",
+      "0.5 (muy comprimido) para aprovechar el espacio de la hoja.",
       "3.0 (triple espacio) para que el documento parezca más extenso."
     ],
-    correcta: 1,
+    correcta: 0,
     feedback_ok: "¡Muy bien! Un interlineado entre 1.15 y 1.5 es el rango ideal: evita que el texto se vea apretado sin desperdiciar demasiado espacio, facilitando la lectura.",
     feedback_mal: "Incorrecto. Un interlineado de 0.5 haría el texto ilegible, y uno de 3.0 desperdiciaría mucho espacio. El rango correcto es de 1.15 a 1.5, que garantiza comodidad de lectura."
   },
   {
+    // P13 — correcta: 2 (c)
     texto: "¿Por qué es importante respetar los márgenes y espaciados definidos en el Manual de Identidad?",
     opciones: [
       "Porque son obligatorios por ley en todos los países para documentos empresariales.",
-      "Porque garantizan la coherencia visual, la legibilidad y la apariencia profesional en todos los materiales de la empresa.",
-      "Porque sin márgenes correctos, los documentos no pueden enviarse por correo electrónico."
+      "Porque sin márgenes correctos, los documentos no pueden enviarse por correo electrónico.",
+      "Porque garantizan la coherencia visual, la legibilidad y la apariencia profesional en todos los materiales de la empresa."
     ],
-    correcta: 1,
+    correcta: 2,
     feedback_ok: "¡Correcto! Los márgenes y espaciados no son una exigencia legal ni técnica de correo; son una norma interna de diseño que garantiza coherencia, legibilidad y profesionalismo en todos los documentos.",
     feedback_mal: "Incorrecto. Los márgenes y espaciados no son obligatorios por ley ni impiden envíos digitales. Su importancia radica en que garantizan coherencia visual, legibilidad y apariencia profesional en toda la comunicación de la empresa."
   },
   {
+    // P14 — correcta: 1 (b)
     texto: "¿Qué tipo de tipografía se recomienda usar para textos muy extensos en documentos corporativos?",
     opciones: [
       "Una tipografía decorativa y expresiva para mantener la atención del lector.",
@@ -1319,13 +1333,14 @@ const preguntas = [
     feedback_mal: "Incorrecto. Para textos extensos se debe usar tipografía de cuerpo: neutra, sencilla y de alta legibilidad. Las decorativas cansan la vista y dificultan la lectura en párrafos largos."
   },
   {
+    // P15 — correcta: 0 (a)
     texto: "¿Cuál de los siguientes elementos NO forma parte de la identidad corporativa?",
     opciones: [
-      "El logotipo, los colores y las tipografías oficiales de la empresa.",
       "El estado de cuenta bancario y el balance financiero trimestral.",
+      "El logotipo, los colores y las tipografías oficiales de la empresa.",
       "Los márgenes estándar de los documentos y el manual de uso del logotipo."
     ],
-    correcta: 1,
+    correcta: 0,
     feedback_ok: "¡Correcto! Los estados de cuenta y balances financieros son documentos contables, no elementos de identidad corporativa. La identidad se refiere a los elementos visuales y comunicacionales, no a las finanzas.",
     feedback_mal: "Incorrecto. Los estados de cuenta y balances financieros pertenecen al área contable, no a la identidad corporativa. Los elementos de identidad son visuales y comunicacionales: logotipo, colores, tipografías, márgenes."
   }
